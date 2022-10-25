@@ -38,6 +38,4 @@ build/
 .DS_Store
 
 ### hosts stuff ###
-!/dev/hosts
-!/dev/hosts-nginx
-!/dev/hosts-tomcat
+/dev/hosts
