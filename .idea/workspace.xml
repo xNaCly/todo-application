@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="ignore hosts stuff" />
+    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="best" />
     <list id="32b4a4d6-19ce-4d36-81b9-0f3d8f62673b" name="config" comment="">
       <change beforePath="$PROJECT_DIR$/dev/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/hosts-nginx" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts-nginx" afterDir="false" />
@@ -221,7 +221,7 @@
       <workItem from="1657791838117" duration="660000" />
       <workItem from="1657796532436" duration="320000" />
       <workItem from="1666676817131" duration="1374000" />
-      <workItem from="1666678453146" duration="1244000" />
+      <workItem from="1666678453146" duration="1550000" />
     </task>
     <task id="LOCAL-00001" summary="grundlegendes Projekt angelegt, JPA, Docker, beispielhafte REST Schnittstelle und EntityClass">
       <created>1657660600581</created>
@@ -328,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666679367561</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="best">
+      <created>1666679936362</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666679936362</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +363,7 @@
     <MESSAGE value="tomcat demo URL" />
     <MESSAGE value="init" />
     <MESSAGE value="ignore hosts stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore hosts stuff" />
+    <MESSAGE value="best" />
+    <option name="LAST_COMMIT_MESSAGE" value="best" />
   </component>
 </project>
