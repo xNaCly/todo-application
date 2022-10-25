@@ -96,7 +96,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="https://local.egotec.com/api/hello/world" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/backend/api/hello/world" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="starterproject_cloud:war exploded">
