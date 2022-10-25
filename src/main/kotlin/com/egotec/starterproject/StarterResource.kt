@@ -8,7 +8,5 @@ import javax.ws.rs.Produces
 class StarterResource {
     @GET
     @Produces("text/plain")
-    fun hello(): String {
-        return "Hello, World!"
-    }
+    fun hello() = "Hello, World!"
 }
