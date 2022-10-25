@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="starterproject_cloud:war" />
       <artifact name="starterproject_cloud:war exploded" />
     </artifacts-to-build>
   </component>
@@ -9,15 +10,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="best">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="verbesserungen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/etc/nginx/inc/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/dev/etc/nginx/inc/default.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/hosts-nginx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/hosts-tomcat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
     </list>
     <list id="32b4a4d6-19ce-4d36-81b9-0f3d8f62673b" name="config" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +106,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.init.sh">
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/backend/api/hello/world" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -230,7 +228,7 @@
       <workItem from="1657796532436" duration="320000" />
       <workItem from="1666676817131" duration="1374000" />
       <workItem from="1666678453146" duration="1550000" />
-      <workItem from="1666687856950" duration="1358000" />
+      <workItem from="1666687856950" duration="3643000" />
     </task>
     <task id="LOCAL-00001" summary="grundlegendes Projekt angelegt, JPA, Docker, beispielhafte REST Schnittstelle und EntityClass">
       <created>1657660600581</created>
@@ -344,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666679936362</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="verbesserungen">
+      <created>1666689361357</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666689361357</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,6 +378,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="ignore hosts stuff" />
     <MESSAGE value="best" />
-    <option name="LAST_COMMIT_MESSAGE" value="best" />
+    <MESSAGE value="verbesserungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="verbesserungen" />
   </component>
 </project>
