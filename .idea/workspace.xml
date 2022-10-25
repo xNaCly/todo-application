@@ -9,19 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="braucht man nicht">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/etc/nginx/ssl/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/starterproject_cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starterproject_cloud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/etc/nginx/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/dev/etc/nginx/conf.d/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/etc/nginx/conf.d/egotec.com.conf" beforeDir="false" afterPath="$PROJECT_DIR$/dev/etc/nginx/conf.d/egotec.com.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/etc/nginx/conf.d/saas.de.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/etc/nginx/ssl/dhparam.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/etc/nginx/ssl/egotec.com.crt.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/etc/nginx/ssl/egotec.com.key.pem" beforeDir="false" />
-    </list>
+    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="mehr Einstellungen" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,29 +65,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/phko/workspace/starterproject_cloud",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.21469648",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/phko/workspace/starterproject_cloud&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.21469648&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
@@ -222,6 +210,7 @@
       <workItem from="1657791838117" duration="660000" />
       <workItem from="1657796532436" duration="320000" />
       <workItem from="1666676817131" duration="1374000" />
+      <workItem from="1666678453146" duration="347000" />
     </task>
     <task id="LOCAL-00001" summary="grundlegendes Projekt angelegt, JPA, Docker, beispielhafte REST Schnittstelle und EntityClass">
       <created>1657660600581</created>
@@ -279,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666677271107</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="mehr Einstellungen">
+      <created>1666678688197</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666678688197</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +299,7 @@
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="weitere configs" />
     <MESSAGE value="braucht man nicht" />
-    <option name="LAST_COMMIT_MESSAGE" value="braucht man nicht" />
+    <MESSAGE value="mehr Einstellungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="mehr Einstellungen" />
   </component>
 </project>
