@@ -9,7 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="init">
+    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="ignore hosts stuff" />
+    <list id="32b4a4d6-19ce-4d36-81b9-0f3d8f62673b" name="config" comment="">
       <change beforePath="$PROJECT_DIR$/dev/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/hosts-nginx" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts-nginx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/hosts-tomcat" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts-tomcat" afterDir="false" />
@@ -71,6 +72,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -98,7 +100,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.init.sh">
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/backend/api/hello/world" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -207,6 +209,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="" />
+      <changelist id="32b4a4d6-19ce-4d36-81b9-0f3d8f62673b" name="config" comment="" />
       <created>1657652731178</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -218,7 +221,7 @@
       <workItem from="1657791838117" duration="660000" />
       <workItem from="1657796532436" duration="320000" />
       <workItem from="1666676817131" duration="1374000" />
-      <workItem from="1666678453146" duration="657000" />
+      <workItem from="1666678453146" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="grundlegendes Projekt angelegt, JPA, Docker, beispielhafte REST Schnittstelle und EntityClass">
       <created>1657660600581</created>
@@ -304,7 +307,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666679066505</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ignore hosts stuff">
+      <created>1666679151860</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666679151860</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ignore hosts stuff">
+      <created>1666679188107</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666679188107</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ignore hosts stuff">
+      <created>1666679367561</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666679367561</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +355,7 @@
     <MESSAGE value="mehr Einstellungen" />
     <MESSAGE value="tomcat demo URL" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="ignore hosts stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore hosts stuff" />
   </component>
 </project>
