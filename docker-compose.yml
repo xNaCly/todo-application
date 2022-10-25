@@ -1,0 +1,40 @@
+version: '2'
+
+services:
+  nginx:
+    image: nginx:stable
+    volumes:
+      - ./dev/hosts:/etc/hosts
+      - ./dev/etc/nginx/conf.d:/etc/nginx/conf.d
+      - ./dev/etc/nginx/inc:/etc/nginx/inc
+      - ./dev/etc/nginx/ssl:/etc/nginx/ssl
+      - ./frontend:/usr/share/nginx/html
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      TOMCAT_URL: http://tomcat:8080/backend/
+      KEYCLOAK_URL: http://keycloak:8080/auth/
+
+  mariadb:
+    image: mariadb:10.5
+    command: --max_allowed_packet=32505856
+    environment:
+      MARIADB_ROOT_PASSWORD: Root12+#
+      MARIADB_USER: starterUser
+      MARIADB_PASSWORD: Demo12+#
+      MARIADB_DATABASE: starterProject
+      ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - ./backup/mariadb.sql:/docker-entrypoint-initdb.d/mariadb.sql
+      - mariadb:/bitnami/mariadb
+      - mariadb-boot:/opt/bitnami/mariadb/.bootstrap
+    ports:
+      - 3306:3306
+
+volumes:
+  mariadb:
+    driver: local
+  mariadb-boot:
+    driver: local
+
