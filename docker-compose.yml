@@ -32,6 +32,13 @@ services:
     ports:
       - 3306:3306
 
+  tomcat:
+    image: tomcat:9
+    volumes:
+      - ./target/StarterProject-1.0-SNAPSHOT:/usr/local/tomcat/webapps/backend
+    ports:
+      - 8080:8080
+
 volumes:
   mariadb:
     driver: local
