@@ -27,4 +27,4 @@ docker-compose pull
 docker-compose up -d
 
 echo "<= done"
-echo "Open http://local.egotec.com"
+echo "Open http://localhost"
