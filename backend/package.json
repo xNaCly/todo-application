@@ -1,0 +1,17 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"main": "dist/server.js",
+	"author": "xnacly",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.18.2"
+	},
+	"scripts": {
+		"build": "npx tsc",
+		"start": "yarn tsc && node ."
+	},
+	"devDependencies": {
+		"typescript": "^4.8.4"
+	}
+}
