@@ -12,6 +12,7 @@
 		"start": "yarn tsc && node ."
 	},
 	"devDependencies": {
+		"@types/express": "^4.17.14",
 		"typescript": "^4.8.4"
 	}
 }
