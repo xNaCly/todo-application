@@ -4,6 +4,9 @@ export enum LogType {
 	WARN,
 }
 
+/**
+ * log given args prefixed with the given LogLevel and the current ISODate
+ */
 export function log(typeOfLog: LogType, ...args: any[]) {
 	let logType = "INFO";
 
@@ -13,8 +16,6 @@ export function log(typeOfLog: LogType, ...args: any[]) {
 			break;
 		case LogType.WARN:
 			logType = "WARN";
-			break;
-		default:
 			break;
 	}
 
