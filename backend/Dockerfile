@@ -1,6 +1,9 @@
-FROM node:16
+FROM alpine:latest
 WORKDIR /usr/src/app
-RUN npm install
+COPY package*.json ./
+RUN apk add --no-cache nodejs
+RUN apk add --no-cache yarn
+RUN yarn install
 COPY . .
 EXPOSE 8080
-CMD ["node", "."]
+CMD ["yarn", "start"]
