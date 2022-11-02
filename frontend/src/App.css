@@ -4,8 +4,9 @@
 :root {
 	--bg-color: #fcee0a;
 	--fg-color: #050505;
+	--fg-sec-color: #232323;
 	--spacing: 2rem;
-	--sec-color: #a09902;
+	--bg-sec-color: #c5bb00;
 }
 
 * {
@@ -13,6 +14,13 @@
 	font-family: "Roboto Mono", monospace;
 	margin: 0;
 	padding: 0;
+}
+
+#App {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 
 body,
@@ -24,6 +32,8 @@ html {
 	border: calc(var(--spacing) / 8) solid var(--fg-color);
 	margin: var(--spacing);
 	padding: calc(var(--spacing) / 2);
+	width: 50%;
+	box-shadow: 10px 10px;
 }
 
 .task {
@@ -31,8 +41,13 @@ html {
 	margin: calc(var(--spacing) / 2);
 	border: calc(var(--spacing) / 16) solid var(--fg-color);
 }
+
 .task.task-finished .task-title {
 	text-decoration-line: line-through;
+}
+
+.task.task-finished {
+	background-color: var(--bg-sec-color);
 }
 
 .task-content {
@@ -43,7 +58,7 @@ html {
 
 .task-date {
 	font-size: small;
-	color: var(--sec-color);
+	color: var(--fg-sec-color);
 }
 
 .task-title {
@@ -95,4 +110,6 @@ input {
 	background-color: var(--fg-color);
 	color: var(--bg-color);
 	padding: calc(var(--spacing) / 8);
+	border: 1px solid var(--bg-color);
+	outline: none;
 }
