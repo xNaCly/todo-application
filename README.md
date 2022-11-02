@@ -11,6 +11,6 @@ Baue eine TODO-Liste Applikation
 -   Backend:
     -   Typescript
     -   express.js
-    -   mongodb
+    -   sqlite
 -   Frontend:
     -   react.js
