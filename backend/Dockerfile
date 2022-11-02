@@ -4,6 +4,7 @@ COPY package*.json ./
 RUN apk add --no-cache nodejs
 RUN apk add --no-cache yarn
 RUN yarn install
+RUN yarn prisma migrate dev --name init
 COPY . .
 EXPOSE 8080
 CMD ["yarn", "start"]
