@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import { log, LogType } from "./util";
 
 class Database {
 	private db: PrismaClient;
@@ -33,21 +34,31 @@ class Database {
 		return await this.db.todo.findMany();
 	}
 
-	async updateTaskTitleById(id: number, title: string) {
-		return await this.db.todo.update({
-			where: {
-				id,
-			},
-			data: {
-				title,
-			},
-		});
+	async updateTaskTitleById(id: number, title: string): Promise<Todo | null> {
+		try {
+			return await this.db.todo.update({
+				where: {
+					id,
+				},
+				data: {
+					title,
+				},
+			});
+		} catch (e) {
+			log(LogType.ERROR, e);
+			return null;
+		}
 	}
 
-	async deleteTaskById(id: number): Promise<Todo> {
-		return await this.db.todo.delete({
-			where: { id },
-		});
+	async deleteTaskById(id: number): Promise<Todo | null> {
+		try {
+			return await this.db.todo.delete({
+				where: { id },
+			});
+		} catch (e) {
+			log(LogType.ERROR, e);
+			return null;
+		}
 	}
 
 	close() {
