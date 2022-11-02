@@ -5,7 +5,6 @@ const router = express.Router();
 
 router.get("/", async (req: Request, res: Response) => {
 	const todos: Todo[] = (await db.getTasks()) || [];
-
 	res.send({ data: todos });
 });
 
@@ -52,7 +51,7 @@ router.delete("/:id", async (req: Request, res: Response) => {
 	const todo = await db.deleteTaskById(convertedId);
 
 	if (!todo) {
-		let err = errorFeedback(500, `deleting todo with id '${id}' failed`);
+		let err = errorFeedback(404, `deleting todo with id '${id}' failed, possible cause: todo not found`);
 		return res.status(err.code).send({ err });
 	}
 
@@ -75,6 +74,12 @@ router.patch("/:id", async (req: Request, res: Response) => {
 	}
 
 	const todo = await db.updateTaskTitleById(convertedId, title);
+
+	if (!todo) {
+		let err = errorFeedback(404, `updating todo with id '${id}' failed, possible cause: todo not found`);
+		return res.status(err.code).send({ err });
+	}
+
 	res.status(200).send({ data: todo });
 });
 
