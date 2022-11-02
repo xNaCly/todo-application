@@ -1,6 +1,9 @@
 FROM alpine:latest
 WORKDIR /usr/src/app
-COPY package*.json ./
+COPY package.json ./
+COPY yarn.lock ./
+COPY prisma ./
+COPY .env ./
 RUN apk add --no-cache nodejs
 RUN apk add --no-cache yarn
 RUN yarn install
