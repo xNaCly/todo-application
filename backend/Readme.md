@@ -48,6 +48,8 @@ curl --request DELETE --url http://localhost:8080/todo/1
 
 ```bash
 git clone https://github.com/xnacly/cloudstart-fork
+# switch to backend directory
+cd backend
 # install dependencies
 yarn
 # setup database
@@ -60,5 +62,5 @@ yarn start
 
 ```bash
 docker build . -t cloudstart/backend
-docker run 8080:8080 -d cloudstart/backend
+docker run -p 8080:8080 -d cloudstart/backend
 ```
