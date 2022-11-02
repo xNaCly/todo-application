@@ -1,13 +1,13 @@
 interface Todo {
-	title: String;
-	id: String;
-	createdAt: String;
+	title: string;
+	id: number;
+	createdAt: Date;
 	finished: boolean;
 }
 
 const Todo = {
 	title: String,
-	id: String,
-	createdAt: String,
+	id: Number,
+	createdAt: Date,
 	finished: Boolean,
 };
