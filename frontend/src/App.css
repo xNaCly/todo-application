@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&display=swap");
+
+:root {
+	--bg-color: #fcee0a;
+	--fg-color: #050505;
+	--spacing: 2rem;
+	--sec-color: #a09902;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+	box-sizing: border-box;
+	font-family: "Roboto Mono", monospace;
+	margin: 0;
+	padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body,
+html {
+	background-color: var(--bg-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tasklist {
+	border: calc(var(--spacing) / 8) solid var(--fg-color);
+	margin: var(--spacing);
+	padding: calc(var(--spacing) / 2);
 }
 
-.App-link {
-  color: #61dafb;
+.task {
+	padding: calc(var(--spacing) / 4);
+	margin: calc(var(--spacing) / 2);
+	border: calc(var(--spacing) / 16) solid var(--fg-color);
+}
+.task.task-finished .task-title {
+	text-decoration-line: line-through;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-content {
+	display: flex;
+	flex-direction: column;
+	margin-top: calc(var(--spacing) / 16);
+}
+
+.task-date {
+	font-size: small;
+	color: var(--sec-color);
+}
+
+.task-title {
+	margin-left: calc(var(--spacing) / 4);
+}
+
+.task-counter {
+	position: relative;
+	top: -5px;
+	left: -10px;
+	background-color: var(--fg-color);
+	color: var(--bg-color);
+	padding: calc(var(--spacing) / 8);
+}
+
+.task-counter::before {
+	content: "#";
+}
+
+.task-modal {
+	padding: var(--spacing);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--fg-color);
+	color: var(--bg-color);
+	z-index: 5000;
+}
+
+.task-modal div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+button {
+	border: none;
+	background-color: var(--fg-color);
+	color: var(--bg-color);
+	padding: calc(var(--spacing) / 8);
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+input {
+	background-color: var(--fg-color);
+	color: var(--bg-color);
+	padding: calc(var(--spacing) / 8);
 }
