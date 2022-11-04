@@ -61,6 +61,7 @@ yarn start
 ### Production
 
 ```bash
+cd backend
 docker build . -t cloudstart/backend
 docker run -p 8080:8080 -d cloudstart/backend
 ```
