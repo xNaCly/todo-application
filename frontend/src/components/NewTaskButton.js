@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 export default function NewTaskButton({ addANewTaskByTitle }) {
 	const [toggled, setToggle] = useState(false);
