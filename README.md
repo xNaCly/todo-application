@@ -24,3 +24,9 @@ backend will run on `localhost:8080`, frontend on `localhost:80`
     - javascript
     - react.js
     - node-fetch
+
+## Contributors
+- https://github.com/xNaCly/ 9525469
+- https://github.com/ellirynbw 9197785
+- https://github.com/noschnosch 1823169
+- https://github.com/derphilosoff 8478190
