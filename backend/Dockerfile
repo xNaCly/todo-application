@@ -1,5 +1,5 @@
 FROM alpine:latest
-WORKDIR /usr/src/app
+WORKDIR /usr/src/cloudstart-backend
 COPY package.json ./
 COPY yarn.lock ./
 COPY prisma ./
