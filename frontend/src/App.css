@@ -2,11 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&display=swap");
 
 :root {
-	--bg-color: #fcee0a;
-	--fg-color: #050505;
-	--fg-sec-color: #232323;
+	--red: #ff003c;
+	--gray: #3a3a3a;
+	--primary: #fcee0a;
+	--primary-less: #dacf0b;
+	--secondary: #050505;
 	--spacing: 2rem;
-	--bg-sec-color: #c5bb00;
 }
 
 * {
@@ -25,21 +26,30 @@
 
 body,
 html {
-	background-color: var(--bg-color);
+	background-image: radial-gradient(var(--gray) 20%, transparent 20%),
+		radial-gradient(var(--gray) 20%, transparent 20%);
+	background-color: var(--primary);
+	background-position: 0 0, 50px 50px;
+	background-size: 5px 5px;
+	color: var(--secondary);
 }
 
 .tasklist {
-	border: calc(var(--spacing) / 8) solid var(--fg-color);
+	border: calc(var(--spacing) / 8) solid var(--secondary);
 	margin: var(--spacing);
 	padding: calc(var(--spacing) / 2);
+	background-color: var(--primary);
+	margin-top: 0;
 	width: 50%;
 	box-shadow: 10px 10px;
 }
 
 .task {
 	padding: calc(var(--spacing) / 4);
+	padding-left: 0;
+	padding-top: 0;
 	margin: calc(var(--spacing) / 2);
-	border: calc(var(--spacing) / 16) solid var(--fg-color);
+	border: calc(var(--spacing) / 16) solid var(--secondary);
 }
 
 .task.task-finished .task-title {
@@ -47,30 +57,34 @@ html {
 }
 
 .task.task-finished {
-	background-color: var(--bg-sec-color);
+	background-color: var(--primary-less);
 }
 
 .task-content {
 	display: flex;
 	flex-direction: column;
 	margin-top: calc(var(--spacing) / 16);
+	margin-left: calc(var(--spacing) / 4);
 }
 
 .task-date {
 	font-size: small;
-	color: var(--fg-sec-color);
+	color: var(--gray);
 }
 
-.task-title {
-	margin-left: calc(var(--spacing) / 4);
+.task-controller {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.task-controller * {
+	font-size: small;
 }
 
 .task-counter {
-	position: relative;
-	top: -5px;
-	left: -10px;
-	background-color: var(--fg-color);
-	color: var(--bg-color);
+	background-color: var(--secondary);
+	color: var(--primary);
 	padding: calc(var(--spacing) / 8);
 }
 
@@ -78,27 +92,37 @@ html {
 	content: "#";
 }
 
-.task-modal {
-	padding: var(--spacing);
+.task-modal,
+.error-modal {
+	border: calc(var(--spacing) / 8) solid var(--secondary);
+	padding: calc(var(--spacing) / 2);
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: var(--fg-color);
-	color: var(--bg-color);
+	background-color: var(--primary);
 	z-index: 5000;
-}
-
-.task-modal div {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	box-shadow: 10px 10px;
+}
+
+.error-modal {
+	padding: calc(var(--spacing) / 4);
+	background-color: var(--red);
+	color: var(--secondary);
+	box-shadow: 10px 10px;
+}
+
+.error-modal * {
+	margin: calc(var(--spacing) / 8);
 }
 
 button {
 	border: none;
-	background-color: var(--fg-color);
-	color: var(--bg-color);
+	background-color: var(--secondary);
+	color: var(--primary);
 	padding: calc(var(--spacing) / 8);
 }
 
@@ -107,9 +131,16 @@ button:hover {
 }
 
 input {
-	background-color: var(--fg-color);
-	color: var(--bg-color);
+	color: var(--secondary);
 	padding: calc(var(--spacing) / 8);
-	border: 1px solid var(--bg-color);
+	margin: calc(var(--spacing) / 16);
+	border: 1px solid var(--secondary);
+	background-color: var(--primary);
 	outline: none;
+}
+
+@media screen and (max-width: 500px) {
+	.tasklist {
+		width: 80%;
+	}
 }
