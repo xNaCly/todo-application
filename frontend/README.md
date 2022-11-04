@@ -9,7 +9,7 @@ React.js app to act as a gui for the backend
 > requires yarn
 
 ```bash
-git clone https://github.com/xnacly/cloudstart-fork
+git clone https://github.com/xnacly/todo-application
 # switch to frontend directory
 cd frontend
 # install dependencies

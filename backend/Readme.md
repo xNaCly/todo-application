@@ -47,7 +47,7 @@ curl --request DELETE --url http://localhost:8080/todo/1
 > Requires yarn
 
 ```bash
-git clone https://github.com/xnacly/cloudstart-fork
+git clone https://github.com/xnacly/todo-application
 # switch to backend directory
 cd backend
 # install dependencies
