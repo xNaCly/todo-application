@@ -3,7 +3,6 @@ const config = require("./config.json");
 const url = config.backendURL;
 
 async function _fetch({ method, subpath, body, dontAwaitResponse }) {
-	console.log(url);
 	if (!method) method = "GET";
 	if (subpath) subpath = "/" + subpath;
 	else subpath = "";
