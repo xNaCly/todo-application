@@ -8,7 +8,7 @@
 ## Setup:
 ```bash
 # download the project
-git clone https://github.com/xnacly/cloudstart-fork
+git clone https://github.com/xnacly/todo-application
 # run containers with docker compose
 docker compose up
 ```
