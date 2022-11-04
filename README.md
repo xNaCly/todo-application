@@ -1,6 +1,7 @@
 # Webengineering project
-![grafik](https://user-images.githubusercontent.com/47723417/199573515-8c022a22-54a2-47f0-9d3a-1112766441af.png)
-![grafik](https://user-images.githubusercontent.com/47723417/199573554-09b9d66a-5cf7-4a5d-aa52-e3b4dfd0c35e.png)
+![image](https://user-images.githubusercontent.com/47723417/199964897-3a474a35-d3cb-432b-afff-314b251c1425.png)
+![image](https://user-images.githubusercontent.com/47723417/199965041-d29d409d-e975-45d4-aba3-14fce45a2f89.png)
+![image](https://user-images.githubusercontent.com/47723417/199965152-aba7a0ae-8367-40a7-bcd0-515fb30a92f9.png)
 
 
 ## Aufgabe
