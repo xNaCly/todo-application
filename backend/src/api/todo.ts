@@ -59,8 +59,9 @@ router.delete("/:id", async (req: Request, res: Response) => {
 });
 
 router.patch("/:id", async (req: Request, res: Response) => {
-	const { title }: { title: string } = req.body;
+	const { title, finished }: { title: string; finished: boolean } = req.body;
 	let { id } = req.params;
+
 	let convertedId = parseInt(id);
 
 	if (!title || title.length === 0) {
@@ -73,7 +74,7 @@ router.patch("/:id", async (req: Request, res: Response) => {
 		return res.status(err.code).send({ err });
 	}
 
-	const todo = await db.updateTaskTitleById(convertedId, title);
+	const todo = await db.updateTask(convertedId, title, finished);
 
 	if (!todo) {
 		let err = errorFeedback(404, `updating todo with id '${id}' failed, possible cause: todo not found`);

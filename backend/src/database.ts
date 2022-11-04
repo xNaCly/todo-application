@@ -34,7 +34,7 @@ class Database {
 		return await this.db.todo.findMany();
 	}
 
-	async updateTaskTitleById(id: number, title: string): Promise<Todo | null> {
+	async updateTask(id: number, title: string, finished: boolean): Promise<Todo | null> {
 		try {
 			return await this.db.todo.update({
 				where: {
@@ -42,6 +42,7 @@ class Database {
 				},
 				data: {
 					title,
+					finished,
 				},
 			});
 		} catch (e) {
